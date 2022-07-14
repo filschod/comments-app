@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Service } from './service';
+import { ServiceModel } from './service';
 import { ServicesService } from './services.service';
 
 @Component({
@@ -9,21 +9,21 @@ import { ServicesService } from './services.service';
   styleUrls: ['./what-we-do.component.scss'],
 })
 export class WhatWeDoComponent implements OnInit {
-  services: Service[] = [];
-  imagesPaths: string[] = [
+  services: ServiceModel[] = [];
+  imagePaths: string[] = [
     '/assets/full-responsive.png',
     '/assets/ui-ux-designer.png',
     '/assets/support.png',
   ];
 
-  constructor(private commentsService: ServicesService) {}
+  constructor(private servicesService: ServicesService) {}
 
   ngOnInit(): void {
     this.getWhatWeDo();
   }
 
   getWhatWeDo(): void {
-    this.commentsService
+    this.servicesService
       .getServices()
       .subscribe(services => (this.services = services));
   }

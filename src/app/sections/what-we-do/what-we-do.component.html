@@ -10,7 +10,7 @@
     <div class="services">
       <div class="service" *ngFor="let service of services; let i = index">
         <div class="service__icon-container">
-          <img src="{{ imagesPaths[i % 3] }}" alt="image" />
+          <img src="{{ imagePaths[i % 3] }}" />
         </div>
         <p class="service__name">{{ service.name || 'No name' }}</p>
         <p class="service__description">

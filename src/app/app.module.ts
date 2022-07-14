@@ -8,6 +8,7 @@ import { ExperienceComponent } from './pages/experience/experience.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { HttpClientModule } from '@angular/common/http';
 import { WhatWeDoComponent } from './sections/what-we-do/what-we-do.component';
+import { QualificationComponent } from './sections/qualification/qualification.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { WhatWeDoComponent } from './sections/what-we-do/what-we-do.component';
     ExperienceComponent,
     ServicesComponent,
     WhatWeDoComponent,
+    QualificationComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

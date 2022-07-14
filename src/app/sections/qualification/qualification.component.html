@@ -1,0 +1,43 @@
+<div class="content-container">
+  <p class="subheading">qualification</p>
+  <p class="heading">My Experience</p>
+  <p class="description">
+    It is a long established fact that a reader will be distracted by the
+    readable content of a page when looking at its layout. The point of using
+    Lorem Ipsum is that it has
+  </p>
+  <div class="experience-container">
+    <div
+      class="experience"
+      *ngFor="let experienceObject of experience; let i = index">
+      <div class="experience__heading">
+        <div class="experience__icon-container">
+          <img src="{{ i === 1 ? imagePaths[0] : imagePaths[1] }}" />
+        </div>
+        <div>
+          <p class="experience__company">
+            {{ experienceObject.company || 'No company name' }}
+          </p>
+          <p class="experience__duration">
+            {{ experienceObject.from || 'since the beginning of time' }}
+            - {{ experienceObject.to || 'now' }}
+          </p>
+        </div>
+      </div>
+      <p class="experience__position">
+        {{
+          experienceObject.position
+            ? experienceObject.position
+            : i === 0
+            ? 'Print & Web Designer'
+            : i === 1
+            ? 'UI/UX Designer & Developer'
+            : 'Web Designer & Developer'
+        }}
+      </p>
+      <p class="experience__description">
+        {{ experienceObject.description || 'No description' }}
+      </p>
+    </div>
+  </div>
+</div>

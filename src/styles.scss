@@ -2,10 +2,14 @@
 :root {
     margin:0;
     padding:0;
-    --primary-background-color:#06101a;
+    --primary-background-color: rgb(6, 16, 26);
     --secondary-background-color: #050d16;
-    --white: rgb(250, 250, 250);
     --cyan: rgb(0, 188, 212);
+    --white: rgb(250, 250, 250);
+    --heading-description-white: rgb(250, 247, 255);
+    --what-we-do-description-white: rgb(232, 225, 225);
+    --company-white: rgb(215,215,215);
+    --gray: rgb(119, 119, 119);
 }
 html {
     font-size: 62.5%;
@@ -15,6 +19,10 @@ body {
     color: var(--white);
     background-color: var(--primary-background-color);
     font-size: 1.6rem;
+}
+
+p {
+    margin: 0;
 }
 
 .content-container {

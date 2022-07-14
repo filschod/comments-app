@@ -2,17 +2,17 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
-import { ServiceModel } from './service';
+import { Experience } from './experience';
 import { environment } from 'src/environments/environment';
 
 @Injectable()
-export class ServicesService {
-  servicesPath = 'services';
+export class QualificationService {
+  experiencePath = 'experience';
   constructor(private http: HttpClient) {}
 
-  getServices(): Observable<ServiceModel[]> {
-    return this.http.get<ServiceModel[]>(
-      `${environment.apiPath}${this.servicesPath}`
+  getExperience(): Observable<Experience[]> {
+    return this.http.get<Experience[]>(
+      `${environment.apiPath}${this.experiencePath}`
     );
     //   .pipe(catchError(this.handleError('getHeroes', [])));
   }

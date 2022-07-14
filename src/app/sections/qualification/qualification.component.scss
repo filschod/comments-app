@@ -1,0 +1,94 @@
+:host {
+    background-color: var(--secondary-background-color);
+}
+.subheading {
+    font-size: 2.4rem;
+    color: var(--cyan);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.heading {
+    font-size: 3.6rem;
+    color: var(--white);
+    font-weight: bold;
+    line-height: 1.278;
+    text-align: center;
+}
+
+.description {
+    font-size: 1.5rem;
+    color: var(--heading-description-white);
+    line-height: 1.867;
+    text-align: center;
+    max-width: 770px;
+    margin: 2em auto;
+}
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.bg {
+    background-color: rgb(6, 16, 26);
+    position: absolute;
+    left: 0px;
+    top: 4271px;
+    width: 1920px;
+    height: 1073px;
+    z-index: 189;
+  }
+  
+.experience {
+    width: calc(50% - 15px);
+    min-width: 570px;
+    background-color: var(--primary-background-color);
+    box-shadow: 0px 0px 30px 0px rgba(6, 16, 26, 0.75);
+}  
+
+.experience__heading {
+    display: flex;
+    gap: 30px;
+}
+
+.experience__icon-container {
+    width: 40px;
+    height: 40px;
+    background-color: var(--cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience__company {
+    font-size: 1.8rem;
+    color: var(--company-white);
+    line-height: 1.333;
+    text-align: left;
+}
+.experience__duration {
+    font-size: 1.4rem;
+    color: var(--gray);
+    line-height: 1.714;
+    text-align: left;
+}
+
+.experience__position {
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.experience__description {
+    font-size: 1.5rem;
+    color: var(--what-we-do-description-white);
+    line-height: 1.867;
+    text-align: left;
+    max-width: 457px;
+}
+  
