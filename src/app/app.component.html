@@ -1,28 +1,43 @@
 <div class="content" role="main">
-  <nav>
-    <ul>
-      <li>
-        <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"
-          >Home</a
-        >
-      </li>
-      <li>
-        <a
-          routerLink="/experience"
-          routerLinkActive="active"
-          ariaCurrentWhenActive="page"
-          >Experience</a
-        >
-      </li>
-      <li>
-        <a
-          routerLink="/services"
-          routerLinkActive="active"
-          ariaCurrentWhenActive="page"
-          >Services</a
-        >
-      </li>
-    </ul>
-  </nav>
+  <header class="content-container">
+    <img width="auto" height="35px" src="/assets/logo.png" alt="image" />
+    <nav>
+      <ul>
+        <li>
+          <a
+            routerLink="/"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/services"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/experience"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >Experience</a
+          >
+        </li>
+        <li class="comments-link">
+          <a
+            routerLink="/"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >Comments</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </header>
+
   <router-outlet></router-outlet>
 </div>

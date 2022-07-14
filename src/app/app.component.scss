@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    display: inline-block;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    margin-top: 2em;
+    margin-left: 3em;
+}
+
+.comments-link {
+    margin: 0;
+    margin-top: 1em;
+    margin-left: 2em;
+    padding: 1em 2em;
+    background-color: var(--cyan);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:active {
+    color: var(--cyan);
+}
