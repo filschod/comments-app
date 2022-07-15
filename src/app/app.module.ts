@@ -12,6 +12,8 @@ import { QualificationComponent } from './sections/qualification/qualification.c
 import { CommentsComponent } from './sections/comments/comments.component';
 import { IntroComponent } from './sections/intro/intro.component';
 import { BlogComponent } from './sections/blog/blog.component';
+import { CommentFormComponent } from './sections/comments/comment-form/comment-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,8 +26,14 @@ import { BlogComponent } from './sections/blog/blog.component';
     CommentsComponent,
     IntroComponent,
     BlogComponent,
+    CommentFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

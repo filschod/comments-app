@@ -1,0 +1,27 @@
+<div class="comments-container">
+  <span class="heading">Add comment</span>
+  <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData?.value)">
+    <div class="inputs-container">
+      <input
+        type="text"
+        class="form-control"
+        name="Fullname"
+        placeholder="Your Name"
+        formControlName="name" />
+      <input
+        type="email"
+        class="form-control"
+        name="Email"
+        aria-describedby="emailHelp"
+        placeholder="Your Email"
+        formControlName="email" />
+    </div>
+    <textarea
+      placeholder="Your Message"
+      class="form-control"
+      formControlName="content"
+      name="Comment">
+    </textarea>
+    <button type="submit" [disabled]="!FormData?.valid">Send</button>
+  </form>
+</div>

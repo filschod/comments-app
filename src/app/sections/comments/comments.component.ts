@@ -11,7 +11,7 @@ import { CommentsService } from './comments.service';
 export class CommentsComponent implements OnInit {
   comments: CommentModel[] = [];
   currentPage: number = 1;
-  limit: number = 1;
+  limit: number = 4;
   order: string = 'asc';
   numberOfComments: number = 0;
   numberOfPages: number = 0;
@@ -84,5 +84,10 @@ export class CommentsComponent implements OnInit {
     this.commentsService
       .getComments(this.limit, this.currentPage, this.order)
       .subscribe(comments => (this.comments = comments));
+  }
+
+  onCommentCreated(): void {
+    this.getNumberOfComments();
+    this.getComments();
   }
 }
