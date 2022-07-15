@@ -11,6 +11,7 @@ import { WhatWeDoComponent } from './sections/what-we-do/what-we-do.component';
 import { QualificationComponent } from './sections/qualification/qualification.component';
 import { CommentsComponent } from './sections/comments/comments.component';
 import { IntroComponent } from './sections/intro/intro.component';
+import { BlogComponent } from './sections/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { IntroComponent } from './sections/intro/intro.component';
     QualificationComponent,
     CommentsComponent,
     IntroComponent,
+    BlogComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
