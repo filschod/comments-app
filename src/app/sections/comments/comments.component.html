@@ -1,0 +1,32 @@
+<div class="comments-container">
+  <div class="heading-container">
+    <span class="heading">Comments</span>
+    <div class="actions">
+      <button (click)="changeOrder('asc')">oldest</button>
+      <span>|</span>
+      <button (click)="changeOrder('desc')">newest</button>
+    </div>
+  </div>
+  <div class="comment" *ngFor="let comment of comments">
+    <p class="comment__created-at">
+      {{ comment.createdAt }}
+    </p>
+    <p class="comment__heading">
+      {{ comment.name || 'No name' }}
+      {{ comment.email || 'No email' }}
+    </p>
+    <p class="comment__content">
+      {{ comment.content || 'No content' }}
+    </p>
+  </div>
+  <div class="pagination" *ngIf="numberOfPages > 0">
+    <div
+      class="page"
+      (click)="changePage(page)"
+      *ngFor="let page of visiblePages">
+      {{ page }}
+    </div>
+    <span class="page-number">... {{ numberOfPages }}</span>
+  </div>
+  <div class="spinner" *ngIf="numberOfPages === 0"></div>
+</div>

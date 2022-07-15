@@ -1,0 +1,112 @@
+.comments-container {
+    max-width: 560px;
+    margin: 0 auto;
+}
+.heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    font-size: 3.6rem;
+    color: var(--white);
+    font-weight: bold;
+    line-height: 1.278;
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5em;
+}
+
+.actions {
+    button {
+        background-color: transparent; /* Green */
+        border: none;
+        color: var(--white);
+        padding: 0;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.6rem;
+        transition: 100ms linear;
+        cursor: pointer;
+    }
+    button:hover {
+        color: var(--gray);
+    }
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.comment {
+    margin: 2em 0;
+}
+
+.comment__created-at {
+    font-size: 1.4rem;
+    color: var(--what-we-do-description-white);
+    line-height: 1.867;
+    text-align: left;
+}
+
+.comment__heading {
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.comment__content {
+    font-size: 1.5rem;
+    color: var(--what-we-do-description-white);
+    line-height: 1.867;
+    text-align: left;
+}
+
+.pagination {
+    display: flex;
+    gap: 1em;
+}
+
+.page {
+    padding: 1em;
+    font-size: 1.5rem;
+    background-color: var(--not-active-page-color);
+    cursor: pointer;
+}
+.page.active, .page:hover {
+    background-color: var(--cyan);
+}
+
+.page-number {
+    padding: 1em;
+    font-size: 1.5rem;
+}
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.spinner {
+    margin: 2em auto;
+    border: 1rem solid transparent;
+    border-radius: 50%;
+    border-top: 1rem solid var(--cyan);
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 1s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+}

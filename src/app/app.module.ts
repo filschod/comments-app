@@ -9,6 +9,7 @@ import { ServicesComponent } from './pages/services/services.component';
 import { HttpClientModule } from '@angular/common/http';
 import { WhatWeDoComponent } from './sections/what-we-do/what-we-do.component';
 import { QualificationComponent } from './sections/qualification/qualification.component';
+import { CommentsComponent } from './sections/comments/comments.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { QualificationComponent } from './sections/qualification/qualification.c
     ServicesComponent,
     WhatWeDoComponent,
     QualificationComponent,
+    CommentsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
