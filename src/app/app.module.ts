@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { WhatWeDoComponent } from './sections/what-we-do/what-we-do.component';
 import { QualificationComponent } from './sections/qualification/qualification.component';
 import { CommentsComponent } from './sections/comments/comments.component';
+import { IntroComponent } from './sections/intro/intro.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CommentsComponent } from './sections/comments/comments.component';
     WhatWeDoComponent,
     QualificationComponent,
     CommentsComponent,
+    IntroComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

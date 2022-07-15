@@ -1,0 +1,81 @@
+.intro-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+}
+.left-column {
+    width: 70%;
+}
+.intro-image {
+    padding-top: 2em;
+    margin-right: -200px;
+}
+.subheading {
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: bold;
+    line-height: 1;
+    text-align: left;
+}
+
+.heading {
+    font-size: 6rem;
+    color: var(--white);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    span {
+        color: var(--cyan);
+    }
+    margin-bottom: 0.6em;
+}
+.description {
+    font-size: 1.8rem;
+    color: var(--white);
+    line-height: 2.111;
+    text-align: left;
+}
+.absolute-svg {
+    position: absolute;
+    z-index: 10;
+}
+.polygon-1-copy {
+    top: 655px;
+    left: 801px;
+}
+
+.polygon-1 {
+    left: 790px;
+    top: 237px;
+} 
+
+.shape-3-copy {
+    left: 15px;
+    bottom: 15px;
+}
+
+.shape-3 {
+    right: 10px;
+    top: 10px;
+}
+
+.shape-2-copy {
+    right: 628px;
+    top: 414px;
+}
+  
+.shape-2 {
+    top: 99px;
+    left: 93px;
+}
+
+.polygon-3-copy {
+    top: 587px;
+    left: 226px;
+}
+
+.polygon-3 {
+    right: 138px;
+    top: 447px;
+}
